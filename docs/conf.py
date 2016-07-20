@@ -39,7 +39,16 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+
+# markdown support
+from recommonmark.parser import CommonMarkParser
+
+source_parsers = {
+    '.md': CommonMarkParser,
+}
+
+source_suffix = ['.rst', '.md']
+
 
 # The encoding of source files.
 #
@@ -50,8 +59,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'IdentityServer4'
-copyright = '2016, Brock Allen, Dominick Baier'
-author = 'Brock Allen, Dominick Baier'
+copyright = '2016, Brock Allen & Dominick Baier'
+author = 'Brock Allen & Dominick Baier'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
