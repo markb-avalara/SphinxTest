@@ -4,9 +4,8 @@ Defining Scopes
 The first thing you typically define in your system are the resources that you want to protect.
 That could be identity information of your users like profile data or email addresses or access to APIs.
 
-**Remark** At runtime, scopes are retrieved via an implementation of the `IScopeStore`. 
-This allows loading them from arbitrary data sources like config files or databases.
-For this document we gonna use the in-memory version of the scope store.
+.. Note:: At runtime, scopes are retrieved via an implementation of the ``IScopeStore``. This allows loading them from arbitrary data sources like config files or databases. For this document we gonna use the in-memory version of the scope store. You can wire up the in-memory store in ``ConfigureServices`` via the ``AddInMemoryScopes`` extensions method.
+
 
 
 Defining the minimal scope for OpenID Connect

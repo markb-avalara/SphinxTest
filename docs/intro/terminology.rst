@@ -50,7 +50,7 @@ They come in two flavours.
 Requesting identity information (aka claims) about a user, e.g. his name or email address is modeled as a scope in OpenID Connect.
 
 There is e.g. a scope called `profile` that includes first name, last name, preferred username, gender, profile picture and more.
-You can read about the standard scopes [here](http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims) and you can create your own scopes in IdentityServer to model your own requirements.
+You can read about the standard scopes `here <http://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims>`_ and you can create your own scopes in IdentityServer to model your own requirements.
 
 **Resource scopes**
 Resource scopes identify web APIs (also called resource servers) - you could have e.g. a scope named `calendar` that represents your calendar API.

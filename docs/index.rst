@@ -37,7 +37,6 @@ Since IdentityServer is a framework and not a boxed product or a SaaS, you can w
    intro/terminology
    intro/specs
    intro/packaging
-   ...
 
 .. toctree::
    :maxdepth: 2
@@ -46,4 +45,11 @@ Since IdentityServer is a framework and not a boxed product or a SaaS, you can w
 
    start/scopes
    start/clients
-   ...
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Reference
+
+   reference/scope
+   reference/client
